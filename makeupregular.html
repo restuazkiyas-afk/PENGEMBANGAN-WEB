@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan | dimakeupinsalma</title>
+    <link rel="icon" type="image/x-icon" href="images/logomakeup.jpg">
+    <link rel="stylesheet" href="styleuts.css"> 
+</head>
+<body>
+    <div class="utama">
+        <h2>Makeup Regular</h2>
+        <div class="product-photo">
+            <img id="fotoUtama" src="images/makeupregularr.jpg" alt="Makeup Regular" width="350">
+        </div>
+        <p>Klik foto kecil di bawah untuk mengganti foto utama.</p>
+        <div class="deret">
+            <div class="product-photo kecil">
+                <img src="images/makeupregular1.jpg" alt="Makeup Regular 1" width="100" onclick="gantiFoto('images/makeupregular1.jpg')">
+            </div>
+            <div class="product-photo kecil">
+                <img src="images/makeupregular2.jpg" alt="Makeup Regular 2" width="100" onclick="gantiFoto('images/makeupregular2.jpg')">
+            </div>
+            <div class="product-photo kecil">
+                <img src="images/makeupkondangan.jpg" alt="Makeup Regular 3" width="100" onclick="gantiFoto('images/makeupkondangan.jpg')">
+            </div>
+            <div class="product-photo kecil">
+                <img src="images/makeupwisuda.jpg" alt="Makeup Regular 4" width="100" onclick="gantiFoto('images/makeupwisuda.jpg')">
+            </div>
+        </div>
+        <p id="teksArtikel">Makeup regular cocok untuk acara harian hingga acara semi formal seperti wisuda, bridesmaid, party, dan kondangan. Hasilnya natural, rapi, dan nyaman dipakai seharian. Kamu bisa konsultasi dulu soal warna dan konsep supaya sesuai dengan outfit dan kepribadianmu.</p>
+        <button onclick="besarkanTeks()">Perbesar Teks</button>
+        <button onclick="kecilkanTeks()">Kecilkan Teks</button>
+        <h3>Yang Termasuk dalam Layanan</h3>
+        <ul>
+            <li>Makeup Wisuda</li>
+            <li>Makeup Bridesmaid</li>
+            <li>Makeup Party</li>
+            <li>Makeup Kondangan</li>
+        </ul>
+        <p><a class="readmore" href="regist.html">Booking Sekarang</a> <a class="readmore" href="utssyahda.html">Kembali ke Home</a></p>
+    
+</div>
+<script src="makeup.js"></script>
+</body>
+</html>

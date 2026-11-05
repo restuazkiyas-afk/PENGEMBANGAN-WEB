@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | dimakeupinsalma</title>
+    <link rel="icon" type="image/x-icon" href="images/logomakeup.jpg">
+    <link rel="stylesheet" href="styleuts.css"> 
+</head>
+<body> 
+    <div class="utama">
+        <h2>Registration / Booking</h2>
+        <p>Isi formulir berikut untuk booking jadwal makeup.</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Data Klien</legend>
+                <p><label for="nama">Nama lengkap:</label><br>
+                <input type="text" id="nama" name="nama" required></p>
+                <p><label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required></p>
+                <p><label for="telepon">Nomor WhatsApp:</label><br>
+                <input type="tel" id="telepon" name="telepon" required></p>
+            </fieldset>
+            <fieldset>
+                <legend>Detail Booking</legend>
+                <p><label for="layanan">Pilih layanan:</label><br>
+                <select id="layanan" name="layanan" required>
+                    <option value="">-- Pilih Layanan --</option>
+                    <option value="regular">Makeup Regular</option>
+                    <option value="special">Makeup Special Occasion</option>
+                    <option value="akad">Makeup Akad / Resepsi</option>
+                    <option value="hairdo">Hairdo</option>
+                    <option value="hijabdo">Hijabdo</option>
+                </select></p>
+                <p><label for="tanggal">Tanggal acara:</label><br>
+                <input type="date" id="tanggal" name="tanggal" required></p>
+                <p><label for="jumlah">Jumlah orang:</label><br>
+                <input type="number" id="jumlah" name="jumlah" value="1" min="1"></p>
+                <p>Lokasi makeup:</p>
+                <input type="radio" id="studio" name="lokasi" value="studio" required>
+                <label for="studio">Di studio</label><br>
+                <input type="radio" id="rumah" name="lokasi" value="rumah">
+                <label for="rumah">Datang ke lokasi</label>
+                <p><label for="catatan">Catatan tambahan:</label><br>
+                <textarea id="catatan" name="catatan" rows="5" cols="40"></textarea></p>
+                <p><input type="checkbox" id="setuju" name="setuju" required>
+                <label for="setuju">Saya menyetujui data booking di atas.</label></p>
+            </fieldset>
+            <button type="submit">Kirim Booking</button>
+            <button type="reset">Bersihkan Form</button>
+        </form>
+    </div>
